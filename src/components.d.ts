@@ -37,10 +37,6 @@ export namespace Components {
         "size": string;
         "text": string;
     }
-    interface PopCard {
-        "popyName": string;
-        "properties": Array<{property: string, property2? :string, property3? :string}>;
-    }
     interface PopContactform {
     }
     interface PopDeveloper {
@@ -104,12 +100,6 @@ declare global {
     var HTMLPopButtonElement: {
         prototype: HTMLPopButtonElement;
         new (): HTMLPopButtonElement;
-    };
-    interface HTMLPopCardElement extends Components.PopCard, HTMLStencilElement {
-    }
-    var HTMLPopCardElement: {
-        prototype: HTMLPopCardElement;
-        new (): HTMLPopCardElement;
     };
     interface HTMLPopContactformElement extends Components.PopContactform, HTMLStencilElement {
     }
@@ -183,7 +173,6 @@ declare global {
         "pop-animated-card": HTMLPopAnimatedCardElement;
         "pop-background": HTMLPopBackgroundElement;
         "pop-button": HTMLPopButtonElement;
-        "pop-card": HTMLPopCardElement;
         "pop-contactform": HTMLPopContactformElement;
         "pop-developer": HTMLPopDeveloperElement;
         "pop-devlog": HTMLPopDevlogElement;
@@ -229,10 +218,6 @@ declare namespace LocalJSX {
         "size"?: string;
         "text"?: string;
     }
-    interface PopCard {
-        "popyName"?: string;
-        "properties"?: Array<{property: string, property2? :string, property3? :string}>;
-    }
     interface PopContactform {
     }
     interface PopDeveloper {
@@ -271,7 +256,6 @@ declare namespace LocalJSX {
         "pop-animated-card": PopAnimatedCard;
         "pop-background": PopBackground;
         "pop-button": PopButton;
-        "pop-card": PopCard;
         "pop-contactform": PopContactform;
         "pop-developer": PopDeveloper;
         "pop-devlog": PopDevlog;
@@ -294,7 +278,6 @@ declare module "@stencil/core" {
             "pop-animated-card": LocalJSX.PopAnimatedCard & JSXBase.HTMLAttributes<HTMLPopAnimatedCardElement>;
             "pop-background": LocalJSX.PopBackground & JSXBase.HTMLAttributes<HTMLPopBackgroundElement>;
             "pop-button": LocalJSX.PopButton & JSXBase.HTMLAttributes<HTMLPopButtonElement>;
-            "pop-card": LocalJSX.PopCard & JSXBase.HTMLAttributes<HTMLPopCardElement>;
             "pop-contactform": LocalJSX.PopContactform & JSXBase.HTMLAttributes<HTMLPopContactformElement>;
             "pop-developer": LocalJSX.PopDeveloper & JSXBase.HTMLAttributes<HTMLPopDeveloperElement>;
             "pop-devlog": LocalJSX.PopDevlog & JSXBase.HTMLAttributes<HTMLPopDevlogElement>;
