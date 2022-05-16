@@ -9,28 +9,10 @@
     <title>PopUp - Das ultimative Minispiel</title>
     <script type="text/javascript" src="/ON-your-styleguide/script.js" defer></script>
     <link rel="icon" href="../assets/sweet_popy.png" />
-    <script>
-      window.addEventListener('load', () => {
-        document.querySelector('#headerbar').navlinks = [
-          { name: 'Anleitung', href: '#Anleitung' },
-          { name: 'Download', href: '#Download' },
-          { name: 'Team', href: '#Team' },
-          { name: 'Popies', href: '#Popies' },
-          { name: 'Shop', href: '#Shop' },
-          { name: 'Sponsoren', href: '#Sponsoren' },
-          { name: 'Newsletter', href: '#Newsletter' },
-          { name: 'Devlog', href: '#Devlog' },
-        ];
-        document.querySelector('#footerbar').footerlinks = [
-          { name: 'Impressum', href: '#' },
-          { name: 'Datenschutz', href: '#' },
-        ];
-      });
-    </script>
   </head>
 
   <body>
-    <pop-header id="headerbar"></pop-header>
+    <pop-header id="headerbar" nav-links-json='[{"name":"Anleitung","href":"#Anleitung"},{"name":"Download","href":"#Download"},{"name":"Team","href":"#Team"},{"name":"Popies","href":"#Popies"},{"name":"Shop","href":"#Shop"},{"name":"Sponsoren","href":"#Sponsoren"},{"name":"Newsletter","href":"#Newsletter"},{"name":"Devlog","href":"#Devlog"}]'></pop-header>
 
     <pop-introduction></pop-introduction>
 
@@ -72,7 +54,7 @@
 
 
     <pop-background color="darkblue" variation="left">
-      <pop-contactform></pop-contactform>
+      <pop-contactform id="Newsletter"></pop-contactform>
     </pop-background>
 
     <pop-background color="blue" variation="left">
@@ -84,7 +66,7 @@
       </div>
     </pop-background>
 
-    <pop-footer id="footerbar"></pop-footer>
+    <pop-footer id="footerbar" footer-links-json='[{"name":"Impressum","href":"#"},{"name":"Datenschutz","href":"#"}]'></pop-footer>
   
   </body>
 </html>

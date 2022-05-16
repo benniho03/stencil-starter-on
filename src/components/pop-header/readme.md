@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property   | Attribute | Description | Type                                | Default |
-| ---------- | --------- | ----------- | ----------------------------------- | ------- |
-| `navlinks` | --        |             | `{ name: string; href: string; }[]` | `[]`    |
+| Property       | Attribute        | Description | Type     | Default     |
+| -------------- | ---------------- | ----------- | -------- | ----------- |
+| `navLinksJson` | `nav-links-json` |             | `string` | `undefined` |
 
 
 ----------------------------------------------
