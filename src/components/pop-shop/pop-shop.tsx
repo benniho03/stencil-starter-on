@@ -30,31 +30,19 @@ export class PopShop {
     function setPreviousImage() {
       if (currentImage > 1) {
         currentImage--;
-        setShopImage();
       } else {
-        currentImage = 6;
-        prevShopImage.setAttribute('src', `${LogoShirt}`);
-        shopImage.setAttribute('src', `${SweetShirt}`);
-        nextShopImage.setAttribute('src', `${GangsterShirt}`);
-        shopTitle.innerText = "Popy Shirt";
-        shopPrice.innerText = "19,99 €";
-        shopDescription.innerText = "Damit wirst du bei deinem nächsten Kinobesuch zum Hit!";
+        currentImage = 6; 
       }
+      setShopImage();
     }
 
     function setNextImage() {
       if (currentImage < 6) {
         currentImage++;
-        setShopImage();
       } else {
         currentImage = 1;
-        prevShopImage.setAttribute('src', `${SweetShirt}`);
-        shopImage.setAttribute('src', `${GangsterShirt}`);
-        nextShopImage.setAttribute('src', `${LogoSnapback}`);
-        shopTitle.innerText = "Gangster Shirt";
-        shopPrice.innerText = "19,99 €";
-        shopDescription.innerText = "Der ultimative Beweis für deine super kranke Coolness!";
       }
+      setShopImage();
     }
 
     function setShopImage() {
