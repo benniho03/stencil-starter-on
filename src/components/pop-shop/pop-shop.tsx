@@ -61,7 +61,7 @@ export class PopShop {
           nextShopImage.setAttribute('src', `${PopUpShirt}`);
           shopTitle.innerText = "PopUp Snapback";
           shopPrice.innerText = "14,99 €";
-          shopDescription.innerText = "Werde der Teil Popy Crew und habe den Spaß deines Lebens!";
+          shopDescription.innerText = "Werde ein Teil Popy Crew und habe den Spaß deines Lebens!";
           break;
         case 3:
           prevShopImage.setAttribute('src', `${LogoSnapback}`);
