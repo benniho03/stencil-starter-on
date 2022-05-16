@@ -28,7 +28,7 @@
   align-items: center;
 }
 #mainImageFrame{
-  background-color: #004f56;
+  background-color: var(--blue-80);
   clip-path: polygon(3% 4%, 100% 0%, 88% 99%, 12% 96%);
   width: 450px;
   height: 600px;
@@ -58,7 +58,7 @@
   font-size: 25px;
 }
 .sideImageFrame{
-  background-color: #004f56;
+  background-color: var(--blue-80);
   width: 200px;
   height: 200px;
   display: flex;
