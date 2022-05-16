@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property      | Attribute | Description | Type                                | Default |
-| ------------- | --------- | ----------- | ----------------------------------- | ------- |
-| `footerlinks` | --        |             | `{ name: string; href: string; }[]` | `[]`    |
+| Property          | Attribute           | Description | Type     | Default     |
+| ----------------- | ------------------- | ----------- | -------- | ----------- |
+| `footerLinksJson` | `footer-links-json` |             | `string` | `undefined` |
 
 
 ----------------------------------------------

@@ -55,10 +55,10 @@ export namespace Components {
     interface PopDownload {
     }
     interface PopFooter {
-        "footerlinks": Array <{name: string, href: string}>;
+        "footerLinksJson": string;
     }
     interface PopHeader {
-        "navlinks": Array <{name: string, href: string}>;
+        "navLinksJson": string;
     }
     interface PopHeading {
         "heading": string;
@@ -247,10 +247,10 @@ declare namespace LocalJSX {
     interface PopDownload {
     }
     interface PopFooter {
-        "footerlinks"?: Array <{name: string, href: string}>;
+        "footerLinksJson"?: string;
     }
     interface PopHeader {
-        "navlinks"?: Array <{name: string, href: string}>;
+        "navLinksJson"?: string;
     }
     interface PopHeading {
         "heading"?: string;

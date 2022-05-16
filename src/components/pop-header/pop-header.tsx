@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop } from '@stencil/core';
+import { Component, Host, h, Prop, State, Watch } from '@stencil/core';
 
 @Component({
   tag: 'pop-header',
@@ -6,7 +6,20 @@ import { Component, Host, h, Prop } from '@stencil/core';
   shadow: true,
 })
 export class PopHeader {
-  @Prop() navlinks: Array <{name: string, href: string}> = [];
+  @Prop() navLinksJson: string;
+  @Watch('navLinksJson')
+
+  handleNavLinksJsonChanged(){
+    this.convertNavJson();
+  }
+  @State() navlinks: Array <{name: string, href: string}> = [];
+
+  componentWillLoad(){
+    this.convertNavJson();
+  }
+  convertNavJson(){
+    this.navlinks = JSON.parse(this.navLinksJson)
+  }
 
   render() {
     return (

@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop } from '@stencil/core';
+import { Component, Host, h, Prop, State, Watch } from '@stencil/core';
 
 @Component({
   tag: 'pop-footer',
@@ -6,7 +6,19 @@ import { Component, Host, h, Prop } from '@stencil/core';
   shadow: true,
 })
 export class PopFooter {
-  @Prop() footerlinks: Array <{name: string, href: string}> = [];
+  @Prop() footerLinksJson: string;
+  @Watch('footerLinksJson')
+
+  handleFooterLinksJsonChanged(){
+    this.convertFooterJson();
+  }
+  @State() footerlinks: Array <{name: string, href: string}> = [];
+  componentWillLoad(){
+    this.convertFooterJson();
+  }
+  convertFooterJson(){
+    this.footerlinks = JSON.parse(this.footerLinksJson)
+  }
 
   render() {
     return (
