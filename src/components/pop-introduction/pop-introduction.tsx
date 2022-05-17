@@ -8,8 +8,6 @@ const popUpLogo = getAssetPath("/assets/pop-up-logo.png")
 })
 export class PopIntroduction {
 
-@Prop() introduction : any
-
   render() {
     return (
       <Host>
