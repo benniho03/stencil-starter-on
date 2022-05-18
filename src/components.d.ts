@@ -60,7 +60,6 @@ export namespace Components {
         "heading": string;
     }
     interface PopIntroduction {
-        "introduction": any;
     }
     interface PopRotation {
     }
@@ -241,7 +240,6 @@ declare namespace LocalJSX {
         "heading"?: string;
     }
     interface PopIntroduction {
-        "introduction"?: any;
     }
     interface PopRotation {
     }

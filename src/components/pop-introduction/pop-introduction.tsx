@@ -1,4 +1,4 @@
-import { Component, Host, h, Prop, getAssetPath } from '@stencil/core';
+import { Component, Host, h, getAssetPath } from '@stencil/core';
 const popUpLogo = getAssetPath("/assets/pop-up-logo.png")
 
 @Component({
@@ -14,9 +14,7 @@ export class PopIntroduction {
         <div class="frame">
         <img class="popUpLogo" src={popUpLogo}/>
         <pop-heading heading="PopUp - das ultimative Minispiel"></pop-heading>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, 
-          sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
-          sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+        <p>Pop Up ist ein Spiel im Entwicklungsstatus, das während eines Theoriesemesters im Studiengang Onlinemedien von Jessica Günther, Oliver Ebert, Paul Henn, Florian Uhlschmied und Benjamin Holderle erstellt wird. Hierfür wird die Gameengine Unity verwendet.</p>
         </div>
       </Host>
     );
